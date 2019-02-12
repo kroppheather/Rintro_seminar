@@ -1,4 +1,4 @@
-# Rintro_seminar
+# intro_seminaR
 An introduction to R for a senior seminar course. 
 
 Code and activities for learning R for GEOG 401. Designed for students who will be working with data in R. 
