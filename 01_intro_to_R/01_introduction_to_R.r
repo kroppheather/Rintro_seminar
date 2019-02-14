@@ -22,11 +22,23 @@ Mat
 #set up a matrix that fills in by columns
 Mat.bycol<-matrix(c(1,2,3,4,5,6), ncol=2, byrow=FALSE)
 Mat.bycol
+#################################
+##1. fill in your answer       ##
+#################################
+#you have height data for 10 oaks and
+#10 maples that were growing next to each other. 
+#You want to make a matrix 
+#the data with each species in a column.
+# do so from this data
+oak <- c(20,23,24,25,30,19,24,22,20,26)
+maple <- c(32,45,34,33,36,29,31,33,35,40)
+
 
 #calculate the average value of Vec
 mean(Vec)
 #specify arguments by name and not order
 mean(na.rm=TRUE,x=Vec)
+
 
 # multiply matrix by vector
 Mat.scale<-matrix(c(2,2,2,3,3,3), ncol=2,byrow=TRUE)
@@ -34,6 +46,10 @@ Mat*Mat.scale
 
 #multiply vector by 5
 Vec*5
+#################################
+##2. fill in your answer       ##
+#################################
+#subtract 5 from the vector
 
 
 #data types
@@ -70,6 +86,27 @@ dim(datM)
 #we can name this and refer to later
 Mdim<-dim(datM)
 
+
+#################################
+##3. fill in your answer       ##
+#################################
+#calculate the maximum elevation
+#hint if you don't know a function
+#name, google r and a description
+#of the function and look for
+#this result https://stat.ethz.ch/
+#at the beginning for official R
+#help
+
+
+#################################
+##4. fill in your answer       ##
+#################################
+#calculate the standard deviation
+#of the elevations
+
+
+
 #get the column names
 names(datM)
 
@@ -97,6 +134,15 @@ datM[1:3,]
 #make a data frame 
 M.ft<-data.frame(Rank=datM$Rank, Elev=datM$Elev.ft)
 M.ft
+#################################
+##5. fill in your answer       ##
+#################################
+#make a data frame of the tree heights
+# and a species labels from the 
+# tree height vectors above.
+#include a column with height data
+#and another with the species identifier
+#hint: look up the rep function to do this faster
 
 #subset all of the tallest mountains in the US
 US.M<-datM[datM$Region=="US",]
@@ -115,6 +161,12 @@ High.M$Elev.ft-US.M$Prom.ft
 #here is the correct code
 High.M$Elev.ft-High.M$Prom.ft
 
+#################################
+##5. fill in your answer       ##
+#################################
+#calculate the average difference between
+#tree heights
+
 
 #######################################################
 ###########Complete the following:          ###########  
@@ -126,6 +178,7 @@ High.M$Elev.ft-High.M$Prom.ft
 
 ##################
 
+
 #2. Look up the plot function by running help(plot).
 #   using the help guidelines, make a plot that shows
 #   elevation in the x axis and prominance in the y axis
@@ -133,4 +186,7 @@ High.M$Elev.ft-High.M$Prom.ft
 ##################
 
 #3. What is the average height of the tallest mountains in the US?
+
+##################
+#4. find out how many unique regions there are in the mountain data.
 
